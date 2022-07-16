@@ -3,8 +3,8 @@ import { FaShoppingCart } from 'react-icons/fa'
 
 export default function CartWidget() {
   return (
-    <button>
-      <FaShoppingCart color="white" />
-    </button>
+      <button className='button'>
+        <FaShoppingCart color="white" />
+      </button>
   )
 }
