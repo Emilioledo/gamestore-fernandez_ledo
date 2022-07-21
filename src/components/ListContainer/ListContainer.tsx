@@ -1,9 +1,12 @@
 import './ListContainer.css'
+import ItemCount from '../ItemCount/ItemCount'
 
-interface Props {
-  greeting: string
-}
-
-export default function ListContainer({ greeting }: Props) {
-  return <div className="container">{greeting}</div>
+export default function ListContainer() {
+  return (
+    <div className="container">
+      <div className='itemCount'>
+        <ItemCount initial={0} stock={5} />
+      </div>
+    </div>
+  )
 }

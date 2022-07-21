@@ -1,8 +1,8 @@
 button {
   background-color: #555555;
-  font-size: 19px;
+  font-size: 16px;
   padding: 10px 24px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .button {
@@ -13,11 +13,11 @@ button {
   background-color: black; 
 }
 
-span {
+.cart {
   color: white;
-  margin: 0 0 0 10px;
 }
 
 .icon {
   margin: 1px 0 0 0;
 }
+
