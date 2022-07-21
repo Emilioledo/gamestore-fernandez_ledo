@@ -4,7 +4,7 @@ import CartWidget from '../Widget/CartWidget'
 export default function NavBar() {
   return (
     <div className="topnav">
-      <h3>Game Store</h3>
+      <h3>GAME STORE</h3>
       <div className="topnav-right">
         <CartWidget />
       </div>

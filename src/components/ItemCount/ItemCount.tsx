@@ -16,6 +16,12 @@ export default function ItemCount({ stock, initial }: Props) {
     }
   }, [stock])
 
+  function resetAddItem () {
+    if (itemCount === stock) {
+      setDisabledAddBtn(false)
+    }
+  }
+  
   const addItem = () => {
     if (itemCount < stock) {
       setItemCount(itemCount + 1)
@@ -27,9 +33,7 @@ export default function ItemCount({ stock, initial }: Props) {
   const subtractItem = () => {
     if (itemCount > 0) {
       setItemCount(itemCount - 1)
-    }
-    if (itemCount === stock) {
-      setDisabledAddBtn(false)
+      resetAddItem()
     }
   }
 
